@@ -1,24 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {RouterModule, Routes} from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ListComponent } from './components/list/list.component';
-import { CreateComponent } from './components/create/create.component';
-import { EditComponent } from './components/edit/edit.component';
+import {AppRouterModule} from "./app-router.module";
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ListComponent,
-    CreateComponent,
-    EditComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
