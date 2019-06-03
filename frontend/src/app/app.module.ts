@@ -17,6 +17,7 @@ import {EditComponent} from "./components/edit/edit.component";
 import {CreateComponent} from "./components/create/create.component";
 import {IssueService} from "./issue.service";
 import {HttpClientModule} from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -43,7 +44,8 @@ import {HttpClientModule} from "@angular/common/http";
     MatCardModule,
     MatTableModule,
     MatDividerModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule
   ],
   providers: [IssueService],
   bootstrap: [AppComponent]
