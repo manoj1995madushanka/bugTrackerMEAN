@@ -11,7 +11,7 @@ const router = express.Router();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('');
+mongoose.connect('mongodb+srv://ManuMax95:11165065@issues-aj9s7.mongodb.net/test?retryWrites=true&w=majority');
 
 const connection = mongoose.connection;
 
